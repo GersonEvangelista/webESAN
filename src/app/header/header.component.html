@@ -1,0 +1,52 @@
+
+<header>
+  <div id="introduction">
+    <img src="../../assets/IMGesan/log2.png"/>
+    <h2 id="community">
+      <mat-icon>home</mat-icon>
+      Comunidad ESAN</h2>
+
+      <mat-toolbar color="" >
+
+        <mat-toolbar-row class="mobile">
+          <span>Menú</span>
+          <button mat-icon-button (click)="showBarMenu()">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </mat-toolbar-row>
+
+        <mat-toolbar-row *ngIf="showMenu" class="mobile">
+
+          <p>
+            <mat-toolbar color="primary" class="listMenu">
+                <mat-toolbar-row>
+                  <span><a routerLink='/home' mat-list-item>Inicio</a></span>
+                </mat-toolbar-row>
+
+                <mat-toolbar-row>
+                  <span><a routerLink='/contact' mat-list-item>Buscar Grupos</a></span>
+                </mat-toolbar-row>
+
+                <mat-toolbar-row>
+                  <span><a routerLink='/helpEsan' mat-list-item>Necesito Ayuda</a></span>
+                </mat-toolbar-row>
+
+                <mat-toolbar-row>
+                  <span><a routerLink='/book' mat-list-item>Libros</a></span>
+                </mat-toolbar-row>
+            </mat-toolbar>
+          </p>
+
+        </mat-toolbar-row>
+
+        <mat-toolbar-row class="spacer">
+          <a  routerLink='/home' mat-list-item>Inicio</a>
+          <a  routerLink='/contact' mat-list-item>Buscar Grupos</a>
+          <a  routerLink='/helpEsan' mat-list-item>Necesito Ayuda</a>
+          <a  routerLink='/book' mat-list-item>Libros</a>
+        </mat-toolbar-row>
+
+      </mat-toolbar>
+  </div>
+</header>
+

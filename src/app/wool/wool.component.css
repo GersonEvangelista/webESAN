@@ -1,0 +1,104 @@
+body{
+  background-color: #C19A6B;
+  border-radius: 2%;
+}
+
+h1{
+  padding-top: 3%;
+  color: black;
+  text-align: center;
+  font-weight: bold;
+  font-size: 450%;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Nav-Intro*/
+.introduction{
+  columns: 3;
+  text-align: center;
+}
+
+.introduction img{
+  width: 60%;
+  height: 90%;
+  border-radius: 20%;
+}
+
+#img2{
+  padding-top: 18%;
+}
+
+.text{
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.text p{
+  text-align: center;
+  color:white;
+  font-size: 180%;
+  margin: 0% 15%;
+}
+
+/*Section-showcase*/
+
+h2{
+  margin-top: 5%;
+  text-align: center;
+  color: #634E2F;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.showcase{
+  columns: 3;
+}
+
+.accesory{
+  text-align: center;
+}
+
+section img{
+  width: 60%;
+  margin-top: 8%;
+  margin-bottom: 3%;
+  border-radius: 20%;
+}
+
+/*footer*/
+
+footer{
+  margin-top: 3%;
+  background-color: #444444;
+  border-radius: 2%;
+}
+
+.payments img,.socialMedia img{
+  width: 10%;
+  height: 2%;
+  border-radius: 40%;
+}
+
+.socialMedia,.payments,.contact{
+  text-align: center;
+}
+
+.row{
+  columns: 3;
+}
+
+.author{
+  text-align: center;
+}
+
+small,.socialMedia,.payments,.contact{
+  padding-top: 2%;
+  color: white;
+}
+
+/*Efects*/
+
+.accesory img:hover{
+  scale: 1.5;
+  transition: 1s;
+}

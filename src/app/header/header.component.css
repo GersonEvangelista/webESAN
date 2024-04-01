@@ -1,0 +1,41 @@
+/*header*/
+#introduction{
+  background-color: #f10909;
+  text-align: center;
+  border-radius: 1%;
+}
+
+#community{
+  font-size: 250%;
+  padding-bottom: 1%;
+  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*BAR*/
+.spacer {
+  justify-content: space-between;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0% 5%;
+}
+
+a:active, a:hover {
+  color: accent;
+  background-color: rgb(52, 52, 3);
+  padding: 1% 8%;
+  border-style:dotted;
+}
+
+mat-toolbar{
+  background-color: #f10909;
+}
+
+.mobile{
+  display: none;
+}
+

@@ -1,0 +1,18 @@
+/*PARA MOVILES*/
+@media (max-width: 768px){
+
+  .information{
+    columns: 1;
+  }
+
+  .imgs img{
+    width: 10%;
+    height: 10%;
+    border-radius: 30%;
+  }
+
+  #welcome p{
+    font-size: 120%;
+  }
+
+  }

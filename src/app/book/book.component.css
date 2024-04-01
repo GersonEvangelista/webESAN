@@ -1,0 +1,185 @@
+
+body{
+  background-color: black;
+}
+
+/*INTRO-NAV*/
+h1{
+  color: red;
+  font-size: 500%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav{
+  margin-top: 6%;
+}
+
+.introduction{
+  columns: 2 20px;
+}
+
+nav img{
+  height: 60%;
+  width: 80%;
+  border-radius: 10%;
+  margin-left: 10%;
+}
+
+.intro div{
+  text-align: center;
+}
+
+.text{
+  padding-top: 10%;
+}
+
+.text h2{
+  color: yellow;
+  font-size: 32px;
+}
+
+.text p{
+  color: white;
+  font-size: 180%;
+  padding-right: 6%;
+  text-align: center;
+}
+
+/*aside-information*/
+
+.information{
+  text-align: center;
+  margin-top: 5%;
+  columns: 1;
+}
+
+.search{
+  height: 10%;
+}
+
+.shower {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column; /* los elementos secundarios se apilan debajo de la imagen */
+  align-items: center; /* para centrar los elementos verticalmente */
+  text-align: center; /* para centrar el texto horizontalmente */
+}
+
+.shower img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+table,h2{
+  margin: auto;
+  margin-top: 2%;
+  color: greenyellow;
+  width: 70%;
+}
+
+th,tbody td{
+  border: solid 1px white;
+}
+
+thead{
+  color: red;
+}
+
+/*SHOWCASE-section*/
+.books img{
+  margin-top: 10%;
+}
+
+.showcase{
+  margin-top: 5%;
+  text-align: center;
+  columns: 4;
+}
+
+.showcaseAux,.titleCategory{ /*Para cuando no completa las 4 columnas*/
+  columns: 1;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.titleCategory h2{
+  color: darkorchid;
+}
+
+.showcase img{
+  width: 140px;
+  height: 180px;
+}
+
+.showcaseAux img{ /*Para cuando no completa las 4 columnas*/
+  width: 140px;
+  height: 180px;
+}
+
+.books figcaption{
+  margin-top: 15px;
+}
+
+figcaption,p{
+  color: white;
+}
+
+/*Footer*/
+footer{
+  margin-top: 5%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+a img{
+  width: 45px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+.payments img{
+  width: 45px;
+  height: 50px;
+  border-radius: 30%;
+}
+
+.row{
+  columns: 3;
+}
+
+.contact,.payments,.socialMedia,.author{
+  text-align: center;
+  padding-top: 5px;
+}
+
+.socialMedia a{
+  cursor: pointer;
+}
+
+.author small{
+  color: white;
+}
+
+.author{
+  margin-bottom: 20px;
+}
+
+/*Efects*/
+.books img:hover{
+  scale: 1.8;
+  transition: 1s;
+}
+
+
+/*EscribirTitulo*/
+#escribiendo::after {
+  content: "|";
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

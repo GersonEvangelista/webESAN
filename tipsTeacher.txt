@@ -1,0 +1,5 @@
+*Tips para el sitio chaevWeb
+-definir el objetivo
+-enfocar en necesito ayuda
+-automatizar la pagina. Que el registro sea automatico
+y no manualmente. 

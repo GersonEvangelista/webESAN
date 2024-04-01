@@ -1,0 +1,44 @@
+
+/*section*/
+.information{
+  columns: 2;
+  text-align: center;
+}
+
+article p{
+  padding-top: 12%;
+  color: white;
+  font-size: 150%;
+  margin: 5% 5%;
+}
+
+article h2{
+  color: white;
+}
+
+article img{
+  padding-top: 5%;
+  width: 50%;
+  border-radius: 20%;
+}
+
+
+/*footer*/
+footer{
+  margin-top: 2%;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.author{
+  margin-bottom: 20px;
+}
+
+.author small{
+  color: white;
+}
+
+.author{
+  text-align: center;
+  padding-top: 5px;
+}

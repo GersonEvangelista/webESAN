@@ -1,0 +1,41 @@
+<section>
+  <article>
+    <div class="information">
+      <div id="welcome">
+        <p>Sabemos que la universidad puede presentar desafíos académicos, pero no tienen por qué ser abrumadores.
+          Estamos aquí para ayudarnos a superar esas dificultades y alcanzar nuestras metas educativas.
+          El objetivo de este sitio web es el apoyo mutuo, donde compañeros que dominan ciertas materias te brindarán
+          el apoyo que necesites y a su vez tú podrás ayudarlos económicamente.</p>
+        <!--<p>Gerson Chancas Evangelista</p>-->
+      </div>
+      <div>
+        <img src="../../assets/IMGesan/asesory.jpg"/>
+      </div>
+    </div>
+
+</article>
+
+    <div class="search">
+      <h2>🔎Busca aquí el curso en el que necesitas ayuda</h2><br>
+        <input type="text" [(ngModel)]="courseSearch" (keyup.enter)="buscarCourse()">
+        <button (click)="buscarCourse()">Buscar</button>
+
+        <ul *ngFor="let course of coursesFiltrados">
+          <span><li>{{course.materia}}</li></span>
+        </ul>
+    </div>
+
+    <div class="imgs">
+      <h2>Si encontraste el curso que necesitas ayuda. Comunícate al siguiente número</h2>
+      <a href="https://wa.me/51934671415"><img src="../../assets/IMGLOG/whatsapp.png" alt="WhatsApp"></a>
+    </div>
+
+</section>
+
+<footer>
+  <br>
+  <div class="author">
+    <small>CHAEV/TODOS LOS DERECHOS RESERVADOS</small><br><br>
+  </div>
+</footer>
+

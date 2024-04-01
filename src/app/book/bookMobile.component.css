@@ -1,0 +1,76 @@
+/*PARA MOVILES*/
+@media (max-width: 767px){
+
+  h1{
+      font-size: 300%;
+  }
+
+  /*Introduction-nav*/
+
+  #titleText{
+    font-size: 190%;
+    text-align: center;
+  }
+
+  .introduction{
+      columns: 1;
+  }
+
+  div img{
+      width: 80%;
+  }
+
+  .text h2{
+    color: yellow;
+    font-size: 35px;
+    padding-right: 40px;
+}
+
+  /*search-aside*/
+  .information h2{
+    font-size: 220%;
+  }
+
+  .information input,button{
+    font-size: 190%;
+  }
+
+  table{
+    width: 90%;
+  }
+
+  /*Showcase-section*/
+  .showcase{
+      columns: 2;
+  }
+
+
+  p,figcaption{
+    font-size: 14px;
+}
+
+  /*footer*/
+
+  a img{
+      width: 85px;
+      height: 55px;
+      border-radius: 30%;
+  }
+
+  .payments img{
+      width: 85px;
+      height: 55px;
+      border-radius: 30%;
+  }
+
+  .row{
+      columns: 1;
+  }
+
+/*Efects*/
+.books img:hover{
+  scale: 1.2;
+  transition: 1s;
+}
+
+  }

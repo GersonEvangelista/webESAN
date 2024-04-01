@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webBookChaev</title>
+
+</head>
+<body>
+
+    <header>
+    </header>
+
+    <nav>
+      <h1 style="text-align: center;"></h1>
+      <span id="escribiendo"></span>
+        <div class="introduction">
+            <div>
+                <img src="../../assets/IMG/imageNav.jpg" alt="Biblioteca">
+            </div>
+            <div class="text">
+                <h2 id="titleText">¡Bienvenido al mundo de los libros!</h2>
+                <p> Nos complace mucho que estés aquí explorando nuestro sitio web,
+                     donde encontrarás una selección excepcional de títulos de alta calidad.</p>
+            </div>
+        </div>
+    </nav>
+
+    <aside>
+      <div class="information">
+          <div class="search">
+              <h2>🔎Busca aquí tu libro ideal</h2><br>
+                <input type="text" [(ngModel)]="bookSearch" (keyup.enter)="buscarLibros()">
+                <button (click)="buscarLibros()">Buscar</button>
+          </div>
+
+            <div class="shower" *ngFor="let libro of librosFiltrados">
+              <div>
+                <img [src]="'../../assets/IMG/'+ libro.img">
+                <figcaption>{{libro.titulo}}</figcaption>
+                <p>{{libro.autor}}</p>
+                <p>S/. {{libro.precio}}.00</p>
+              </div>
+            </div>
+
+       </div>
+    </aside>
+<br><br>
+<hr>
+    <section>
+        <div class="titleCategory">
+          <div class="books">
+              <h2>Negocio-Emprendimiento</h2>
+          </div>
+        </div>
+
+        <div class="showcase">
+            <div class="books">
+                <img src="../../assets/IMG/padreRicoPP.jpg">
+                <figcaption>Padre rico padre pobre</figcaption>
+                <p>Autor: Robert Kiyosaki y Sharon Lechter</p>
+                <p>S/ 20.00</p>
+            </div>
+            <div class="books">
+                <img src="../../assets/IMG/hombreMasRdBabilonia.jpg">
+                <figcaption>El hombre más rico de Babilonia</figcaption>
+                <p>Autor: George Samuel Clason</p>
+                <p>S/ 18.00</p>
+            </div>
+            <div class="books">
+              <img src="../../assets/IMG/menosMiedMasRiquez.jpg">
+              <figcaption>Menos miedos más riquezas</figcaption>
+              <p>Autor: Juan Diego Gómez</p>
+              <p>S/ 18.00</p>
+            </div>
+            <div class="books">
+                <img src="../../assets/IMG/negocioSiglo21.jpg">
+                <figcaption>El Negocio del Siglo 21</figcaption>
+                <p>Autor: Robert T. Kiyosaki</p>
+                <p>S/ 20.00</p>
+            </div>
+            <div class="books">
+              <img src="../../assets/IMG/retirarJyR.jpg">
+              <figcaption>Retírate Joven y Rico</figcaption>
+              <p>Autor: Robert T. Kiyosaki</p>
+              <p>S/ 20.00</p>
+            </div>
+            <div class="books">
+                <img src="../../assets/IMG/vendeleAlMentNALG.jpg">
+                <figcaption>Véndele a la mente no a la gente</figcaption>
+                <p>Autor: Jürgen Klaric<p>
+                <p>S/ 20.00</p>
+            </div>
+            <div class="books">
+              <img src="../../assets/IMG/cuadrantFD.jpg">
+              <figcaption>El cuadrante del flujo de dinero</figcaption>
+              <p>Autor: Robert T. Kiyosaki</p>
+              <p>S/ 20.00</p>
+            </div>
+            <div class="books">
+              <img src="../../assets/IMG/libroNdEmp.jpg">
+              <figcaption>El libro negro del emprendedor</figcaption>
+              <p>Autor: Fernando Trias de Bes</p>
+              <p>S/ 20.00</p>
+            </div>
+
+        </div>
+
+        <div class="titleCategory">
+          <div class="books">
+              <h2>Desarrollo Personal-Profesional</h2>
+          </div>
+        </div>
+
+        <div class="showcase">
+          <div class="books">
+              <img src="../../assets/IMG/CGAeISobreLasPerson.jpg">
+              <figcaption>Cómo ganar amigos e influir sobre las personas</figcaption>
+              <p>Autor: Dale Carnegie</p>
+              <p>S/ 20.00</p>
+          </div>
+          <div class="books">
+              <img src="../../assets/IMG/comoAdquirirSM.jpg">
+              <figcaption>Como desarrollar una super memoria</figcaption>
+              <p>Autor: Harry Lorayne</p>
+              <p>S/ 20.00</p>
+          </div>
+          <div class="books">
+            <img src="../../assets/IMG/intelEmoc4e1.jpg">
+            <figcaption>Inteligencia emocional</figcaption>
+            <p>Autor: Ryan J. D. Goleman</p>
+            <p>S/ 25.00</p>
+          </div>
+          <div class="books">
+              <img src="../../assets/IMG/tusZonasError.jpg">
+              <figcaption>Tus zonas erróneas</figcaption>
+              <p>Autor: Wayne Dyer</p>
+              <p>S/ 20.00</p>
+          </div>
+          <div class="books">
+            <img src="../../assets/IMG/psicoOscurManMent.jpg">
+            <figcaption>Psicología oscura y manipulación mental</figcaption>
+            <p>Autor: Daniel Cooper y Laura J.P.Goleman</p>
+            <p>S/ 25.00</p>
+          </div>
+          <div class="books">
+              <img src="../../assets/IMG/espirituCreativo.jpg">
+              <figcaption>El espíritu creativo</figcaption>
+              <p>Autor: Daniel Goleman</p>
+              <p>S/ 18.00</p>
+          </div>
+          <div class="books">
+            <img src="../../assets/IMG/arteDeGuerra.jpg">
+            <figcaption>El arte de la guerra</figcaption>
+            <p>Autor: Sun Tzu</p>
+            <p>S/ 20.00</p>
+          </div>
+          <div class="books">
+              <img src="../../assets/IMG/comSerUnLid.jpg">
+              <figcaption>Como ser un líder</figcaption>
+              <p>Autor: Daniel Goleman</p>
+              <p>S/ 14.00</p>
+          </div>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="row">
+            <div class="socialMedia">
+                <p><strong>Redes sociales</strong></p>
+                <a href="https://wa.me/51934671415"><img src="../../assets/IMGLOG/whatsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.instagram.com/gce.18/"><img src="../../assets/IMGLOG/instagram.jpg" alt="Instagram"></a>
+            </div>
+            <div class="payments">
+                <p><strong>Medios de pago</strong></p>
+                <img src="../../assets/IMGLOG/yape.png">
+                <img src="../../assets/IMGLOG/visa.png">
+            </div>
+            <div class="contact">
+                <p><strong>Contáctanos</strong></p>
+                <p>Atención al cliente:</p>
+                <p>934671415</p>
+            </div>
+        </div>
+        <hr>
+        <div class="author">
+            <small>CHAEV/TODOS LOS DERECHOS RESERVADOS</small><br><br>
+        </div>
+
+    </footer>
+
+</body>
+</html>

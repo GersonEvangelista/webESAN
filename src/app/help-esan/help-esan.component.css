@@ -1,0 +1,60 @@
+/*section*/
+.information{
+  columns: 2;
+  text-align: center;
+}
+
+article p{
+  padding-top: 3%;
+  color: white;
+  font-size: 140%;
+  margin: 5% 5%;
+}
+
+article h2,.search h2,.imgs h2{
+  color: white;
+}
+
+article img{
+  padding-top: 8%;
+  width: 50%;
+  border-radius: 20%;
+}
+
+ul{
+  color: white;
+  list-style: none;
+}
+
+.search{
+  text-align: center;
+  margin: 5%;
+}
+
+.imgs{
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.imgs img{
+  margin-top: 1%;
+  width: 4%;
+  border-radius: 10%;
+}
+
+
+/*Footer*/
+footer{
+  background-color: red;
+  border-radius: 10px;
+}
+
+.author small{
+  color: white;
+}
+
+.author{
+  margin-bottom: 20px;
+  text-align: center;
+  padding-top: 5px;
+}

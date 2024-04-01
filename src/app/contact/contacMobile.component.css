@@ -1,0 +1,26 @@
+/*PARA MOVILES*/
+@media (max-width: 768px){
+
+  .information{
+    columns: 1;
+  }
+
+  .imgs{
+    display: none;
+  }
+
+  h3{
+    color: aqua;
+  }
+
+  a img{
+    width: 8%;
+    height: 8%;
+    border-radius: 30%;
+  }
+
+  .information p{
+    font-size: 120%;
+  }
+
+  }

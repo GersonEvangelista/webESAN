@@ -1,0 +1,13 @@
+/*PARA MOVILES*/
+@media (max-width: 767px){
+
+.information{
+  columns: 1;
+}
+
+#welcome p{
+  padding-top: 1%;
+  font-size: 120%;
+}
+
+}
